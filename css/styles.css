@@ -179,7 +179,7 @@ select{
 .agrupar{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 .agrupar-btn-enviar{
     display: flex;
