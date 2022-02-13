@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer contact website</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/index.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <!-- header -->
+    <nav>
+        <div class="imagen">
+            <img class="logo" src="images/browser.png" alt="imagen logo empresa">
+            <ul>
+                <li><a href="index.html" class="active">Developers</a></li>
+                <li><a href="perfil.html">Visita tu perfil</a></li>
+            </ul>
+        </div>
+        <div class="botones">
+            <button class="btn"><a href="#">Entrar</a></button>
+            <button class="btn"><a href="#">Registrar</a></button>
+        </div>    
+    </nav>
+    <!-- contenido -->
+    <div class="container">
+        <div class="contenido">
+            <h2>¿Estas buscando posicionarte para un puesto como developer web FrontEnd?</h2>
+            <div class="reto">
+                <h3>Demuestra tu experiencia como developer y gánate un sitio en el mundo laboral</h3>
+                <img src="images/reto_green.png">
+            </div>
+            <h3>¿Preparad@ para completar tu perfil?</h3>
+            <div class="formulario">
+                <form action="" id="formPers" class="formPersona">
+                    <fieldset class="personal">
+                        <h1>Datos personales</h1>
+                        <div class="agrupar" id="grupo_correo">
+                            <label for="email">Correo<span>*</span></label>
+                            <div class="datos">
+                                <input type="text" id="email" class="form_input" name="correo">
+                            </div>
+                        </div>
+                        <div class="agrupar" id="grupo_nombre">
+                            <label for="mombre">Nombre y Apellidos<span>*</span></label>
+                            <div class="datos">
+                                <input type="text" id="nombre" class="form_input" name="nombre">
+                            </div>
+                        </div>
+                        <div class="agrupar" id="grupo_pais">
+                            <label for="pais">País<span>*</span></label>
+                            <div class="datos">
+                                <input type="text" id="pais" class="form_input" name="pais">
+                            </div>
+                        </div>
+                        <div class="agrupar" id="grupo_poblacion">
+                            <label for="poblacion">Ciudad de residencia<span>*</span></label>
+                            <div class="datos">
+                                <input type="text" id="poblacion" class="form_input" name="poblacion">  
+                            </div>
+                        </div>
+                        <p>Añade información personal que consideres relevante.</p>
+                        <div class="agrupar" id="agrupar_descripcion">
+                            <label for="descripcion">Descripción<span>*</span></label>
+                            <div class="datos" id="datoDescripcion">
+                                <textarea id="descripcion" name="descripcion" rows="8" cols="70"></textarea>    
+                            </div>    
+                        </div>
+                        <div class="agrupar agrupar-btn-enviar">
+                            <button type="submit" class="form_btn">ENVIAR</button>    
+                        </div> 
+                                 
+                    </fieldset>
+                </form>
+                <form action="" id="formProf" class="formProfesional">
+                    <fieldset class="profesional">
+                        <h1>Datos profesionales</h1>
+                        <div class="agrupar">
+                            <div class="datos">
+                                <label for="years">Años de experiencia:</label>
+                                <select id="years" name="years">
+                                    <option value="menos_1_año">menos de 1 año</option>
+                                    <option value="1_año">1 año</option>
+                                    <option value="2_años">2 años</option>
+                                    <option value="3_años">3 años</option>
+                                    <option value="4_años">4 años</option>
+                                    <option value="5_años">5 años</option>
+                                    <option value="mas_5_años">más de 5 años</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="agrupar">
+                            <div class="datos">
+                                <label for="sector">Selecciona un sector de la lista:</label>
+                                <select id="sector" name="sector">
+                                    <option value="FrontEnd">FrontEnd</option>
+                                    <option value="BackEnd">BackEnd</option>
+                                    <option value="Mobile">Mobile</option>
+                                    <option value="Data Science">Data Science</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="agrupar">
+                            <div class="datos">
+                                <label for="skills">Selecciona los skills con los que trabajas:</label>
+                                <select multiple name="skills" id="skills">
+                                    <option>HTML5</option>
+                                    <option>CSS3</option>
+                                    <option>javaScript</option>
+                                    <option>Bootstrap</option>
+                                    <option>REACT</option>
+                                    <option>Angular</option>
+                                    <option>Git</option>
+                                    <option>Ionic</option>
+                                    <option>Tailwind CSS</option>
+                                    <option>Typescript</option>
+                                    <option>Vue.js</option>
+                                    <option>Figma</option>
+                                    <option>JSON</option>
+                                </select>
+                                <p>Pulsa Ctrl(windows) o Command(Mac) para seleccionar múltiples opciones.</p>      
+                            </div>
+                        </div>     
+                        <div class="agrupar agrupar-btn-enviar">
+                            <button id="send_prof" class="form_btn" type="submit">ENVIAR</button> 
+                        </div>     
+                    </fieldset>            
+                </form>    
+            </div>         
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer_info"> 
+            <img class="empresa_img" src="images/browser.png" alt="imagen logo empresa">
+            <p>Únete a miles de developers y disfruta programando</p>    
+            <ul>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <p>Copyright<span> @ </span>2022 - Mònica Garcia Casanovas</p>      
+        </div>
+    </footer>   
+</body>
+</html>
